@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|VT323|Bangers|Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|VT323|Bangers|Permanent+Marker|Frijole');
+@font-face{
+    font-family:ethnocentric;
+    src: url('../fonts/ethnocentric.ttf');
+    
+}
 body{
     padding:0px;
     margin:0px;
@@ -44,21 +49,22 @@ footer{
     top:-62px;
     z-index:1000;
 }
+.blur-menu a{
+    text-decoration:none;
+}
 .blur-menu{
     padding:0px;
     margin:0 0 10px 0;
     z-index:1;
     text-align:center;
     padding-top:10px;
-    font-family: 'VT323', monospace;
-    text-decoration:none;
+    font-family: 'ethnocentric';
+    list-style:none;
 }
-.blur-menu li{
-    font-size:50px;
+.blur-menu li a{
+    font-size:35px;
     display:block;
     z-index:1;
-}
-.blur-menu li{
     color:transparent;
     display:block;
     text-transform:uppercase;
@@ -66,16 +72,26 @@ footer{
     letter-spacing:1px;
     transition: all 0.2s ease-in-out;
     z-index:1;
+    text-decoration:none;
 }
-.blur-menu:hover li{
+.blur-menu:hover li a{
     text-shadow: 0px 0px 6px #fff;
-    z-index:1;
+    z-index:1; 
+    list-style:none;
 }
 .blur-menu li:hover{
     color:#fff;
     text-shadow: 0px 0px 1px #fff;
     padding-left: 10px;
     z-index:1;
+    list-style:none;
+}
+.blur-menu a:hover{
+    color:#fff;
+    text-shadow: 0px 0px 1px #fff;
+    padding-left: 10px;
+    z-index:1;
+    list-style:none;
 }
 /** end nav**/
 /** start banner **/
@@ -135,16 +151,34 @@ footer{
 .container{
     width:60%;
     height:500px;
-    background-color:#fff;
+    background-size:cover;
+    background-repeat:no-repeat;
     border:1px solid #58677e;
     margin:0;
 }
 .container-two{
      width:38.75%;
     height:500px;
-    background-color:#fff;
+    background:url('../img/stone-background.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     border:1px solid #58677e;
     margin:0;
+}
+.class-info{
+    font-size:30px;
+    font-family:'Bangers',cursive;
+    font-weight:bold;
+    color:white;
+    text-align:center;
+    background: -webkit-linear-gradient(#cc00ff, #00ccff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #000000;
+    margin:20px;
 }
 .stone-bg{
     height:500px;
@@ -180,6 +214,7 @@ footer{
     font-family: 'Bangers', cursive;
     z-index:1000;
     margin-top:-100px;
+    -webkit-text-stroke: 2px #000000;
     
 }
 /** end columns **/
@@ -214,43 +249,43 @@ footer{
     height:64px;
     width:64px;
     display:block;
-    background:url('img/twitch-logo.png');
+    background:url('../img/twitch-logo.png');
 }
 .twitch:hover{
     height:64px;
     width:64px;
     display:block;
-    background:url('img/twitch-alt.png'); 
+    background:url('../img/twitch-alt.png'); 
 }
 .twitter{
    height:64px;
     width:64px;
-    background-image:url('img/twitter-logo.png');
+    background-image:url('../img/twitter-logo.png');
 }
 .twitter:hover{
     height:64px;
     width:64px;
-    background-image:url('img/twitter-alt.png');
+    background-image:url('../img/twitter-alt.png');
 }
 .instagram{
     height:64px;
     width:64px;
-    background-image:url('img/instagram-logo.png');
+    background-image:url('../img/instagram-logo.png');
 }
 .instagram:hover{
     height:64px;
     width:64px;
-    background-image:url('img/instagram-alt.png');
+    background-image:url('../img/instagram-alt.png');
 }
-.snapchat{
+.youtube{
     height:64px;
     width:64px;
-    background-image:url('img/snapchat-logo.png');
+    background-image:url('../img/youtube.png');
 }
-.snapchat:hover{
+.youtube:hover{
     height:64px;
     width:64px;
-    background-image:url('img/snapchat-alt.png');
+    background-image:url('../img/youtube-alt.png');
 }
 .copyright{
     color:#fff;
